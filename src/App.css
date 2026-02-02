@@ -1,0 +1,132 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  outline: none; 
+}
+
+.main-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 60px 20px; 
+}
+
+/* Título da Seção de Vitrine */
+.section-title {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.section-title h2 {
+  font-size: 2rem;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  font-weight: 300;
+  margin-bottom: 10px;
+}
+
+.section-title p {
+  color: #666;
+  font-size: 0.9rem;
+  letter-spacing: 1px;
+}
+
+/* Grade de Produtos Profissional */
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 40px;
+}
+
+.product-card {
+  display: flex;
+  flex-direction: column;
+  transition: all 0.3s ease;
+  border: 1px solid transparent;
+  padding: 15px;
+  /* Arredondando o card do produto para um visual mais chic */
+  border-radius: 15px; 
+}
+
+.product-card:hover {
+  transform: translateY(-8px);
+  border-color: #eee;
+}
+
+/* Moldura da Imagem do Produto */
+.product-image-wrapper {
+  background-color: #f9f9f9;
+  height: 350px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+  overflow: hidden;
+  /* Arredondando o fundo da imagem */
+  border-radius: 12px; 
+}
+
+.product-image-wrapper img {
+  max-width: 85%;
+  max-height: 85%;
+  object-fit: contain;
+  transition: transform 0.5s ease;
+}
+
+.product-card:hover .product-image-wrapper img {
+  transform: scale(1.08);
+}
+
+/* Informações do Produto */
+.product-info {
+  text-align: center;
+  padding-top: 10px;
+}
+
+.product-info h3 {
+  font-size: 0.95rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+  min-height: 40px;
+}
+
+.price {
+  display: block;
+  font-weight: 600;
+  font-size: 1.1rem;
+  margin-bottom: 15px;
+}
+
+/* Botão Estilo Sephora Arredondado */
+.buy-button, 
+button[type="submit"] { /* Isso agora pega o botão ENTRAR também */
+  background-color: #000;
+  color: #fff;
+  border: 1px solid #000;
+  padding: 12px;
+  /* Ajustado para 10px para ficar igual aos inputs de login */
+  border-radius: 10px; 
+  cursor: pointer;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: opacity 0.3s ease;
+}
+
+.buy-button:hover,
+button[type="submit"]:hover {
+  opacity: 0.8;
+}
+
+.cart-badge {
+  background-color: #000;
+  color: #fff;
+  font-size: 10px;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+}

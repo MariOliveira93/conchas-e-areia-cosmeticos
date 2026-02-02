@@ -1,0 +1,132 @@
+.header {
+  width: 100%;
+  background-color: #ffffff;
+  border-bottom: 1px solid #f0f0f0;
+  padding: 5px 0; 
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.header-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.logo-img {
+  /* Tamanho reduzido para ser mais delicado */
+  height: 45px; 
+  width: auto;
+  object-fit: contain;
+}
+
+.nav-menu a {
+  text-decoration: none;
+  color: #000;
+  font-size: 0.7rem; /* Fonte menor e mais discreta */
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  margin: 0 12px;
+  font-weight: 400;
+  transition: opacity 0.3s;
+}
+
+.nav-menu a:hover {
+  opacity: 0.6;
+}
+
+.header-actions {
+  display: flex;
+  gap: 10px;
+}
+
+.icon-btn {
+  background: none;
+  border: none;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  cursor: pointer;
+  padding: 5px 8px;
+  border-radius: 4px;
+  color: #000;
+}
+
+.icon-btn span {
+  font-size: 0.65rem;
+  letter-spacing: 0.5px;
+}
+
+.cart-badge {
+  background-color: #000;
+  color: #fff;
+  font-size: 9px;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* No seu arquivo Login.jsx ou no CSS global */
+.login-container {
+  border-radius: 25px; /* Bordas curvas para a caixa de login */
+  padding: 40px;
+  background: #ffffff;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.05); /* Sombra leve para profundidade */
+}
+
+input {
+  border-radius: 10px !important; /* Arredonda os campos de E-mail e Senha */
+  border: 1px solid #000;
+  padding: 12px;
+}
+
+.login-button {
+  border-radius: 10px;
+  background-color: #000;
+}
+
+.product-card {
+  /* ... seu código anterior ... */
+  border-radius: 20px; /* Bordas bem suaves para os produtos */
+  overflow: hidden; /* Garante que a imagem não saia da borda */
+  background: #fff;
+  border: 1px solid #f0f0f0;
+}
+
+.buy-button {
+  /* ... seu código anterior ... */
+  border-radius: 12px; /* Botão mais moderno */
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.login-button { 
+  background-color: #000;
+  color: #fff;
+  padding: 15px;
+  border: none;
+  width: 100%;
+  cursor: pointer;
+  letter-spacing: 2px;
+  font-size: 0.8rem;
+  border-radius: 10px; 
+  transition: opacity 0.3s;
+}
+
+.login-button:hover {
+  opacity: 0.8;
+}
+
+.login-card {
+  background: #fff;
+  padding: 40px;
+  border-radius: 20px; /* Bordas suaves para a caixa principal */
+  box-shadow: 0 4px 15px rgba(0,0,0,0.05); /* Sombra bem leve */
+}
